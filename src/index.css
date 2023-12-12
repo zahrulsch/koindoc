@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .container-small {
+        @apply max-w-[965px] mx-auto;
+    }
+
+    .link {
+        @apply text-blue-600 cursor-pointer transition-all hover:underline hover:underline-offset-4;
+    }
+
+    .code {
+        @apply bg-gray-200 mx-1 px-1.5 py-[2px] text-stone-800 font-mono text-sm rounded;
+    }
+
+    .sc-title {
+        @apply font-bold flex items-center gap-1.5 text-stone-700;
+    }
+
+    .n-list {
+        @apply list-[auto] mt-2 pl-9;
+    }
+}
