@@ -37,7 +37,7 @@ function App() {
         <div className="w-full h-screen overflow-y-auto">
             <div className="w-full bg-white text-stone-800 flex flex-col">
                 <div
-                    className="w-full sticky top-0 bg-white/80 backdrop-blur-sm duration-300 transition-all"
+                    className="w-full sticky top-0 z-50 bg-white/80 backdrop-blur-sm duration-300 transition-all"
                     ref={headRef}
                 >
                     <div className="container-small w-full py-3">
