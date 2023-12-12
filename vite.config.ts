@@ -81,11 +81,12 @@ export default defineConfig({
             dts: "./src/auto-import.d.ts",
         }),
     ],
+    base: "",
     build: {
         rollupOptions: {
             output: {
                 chunkFileNames(info) {
-                    return `assets/js/${slugify(info.name, true, 9)}.chunk.js`
+                    return `assets/js/${slugify(info.name, false, 9)}.chunk.js`
                 },
                 entryFileNames(info) {
                     return `${slugify(info.name, false)}.js`

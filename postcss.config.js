@@ -1,6 +1,17 @@
 export default {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
+    plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+        "@tailwindcss/nesting": {},
+        cssnano: {
+            preset: [
+                "default",
+                {
+                    discardComments: {
+                        removeAll: true,
+                    },
+                },
+            ],
+        },
+    },
 }

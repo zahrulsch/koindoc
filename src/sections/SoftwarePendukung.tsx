@@ -19,9 +19,9 @@ function SoftwarePendukung(props: SoftwarePendukungProps): JSX.Element {
                 <li className="mt-1">
                     <div className="flex flex-col gap-1">
                         <h4 className="font-medium">Visual Studio Code</h4>
-                        <p className="leading-8">
-                            Silahkan gunakan
-                            <span className="code">VSCode</span>untuk code
+                        <p>
+                            Silahkan gunakan{" "}
+                            <span className="code">VSCode</span> untuk code
                             editor atau bisa menggunakan text editor lain.
                             <a
                                 href="https://code.visualstudio.com/download"
@@ -35,20 +35,28 @@ function SoftwarePendukung(props: SoftwarePendukungProps): JSX.Element {
                 </li>
                 <li className="mt-1">
                     <div className="flex flex-col gap-1">
-                        <h4 className="font-medium">Docker Container</h4>
-                        <p className="leading-8">
-                            Peran<span className="code">docker</span>adalah
-                            sebagai pengganti<span className="code">VM</span>
-                            yang nantinya akan digunakan dari mulai proses
-                            <span className="code">development</span>sampai
-                            dengan <span className="code">build</span>hingga
-                            <span className="code">production test</span>coin.
+                        <h4 className="font-medium">Docker Container Engine</h4>
+                        <p>
+                            Peran <span className="code">docker</span> adalah
+                            sebagai pengganti <span className="code">VM</span>{" "}
+                            yang nantinya akan digunakan dari mulai proses{" "}
+                            <span className="code">development</span> sampai
+                            dengan <span className="code">build</span> hingga{" "}
+                            <span className="code">production test</span> coin.
                             <a
                                 href="https://www.docker.com/products/docker-desktop/"
-                                className="link px-1 font-medium"
+                                className="link ml-1 font-medium"
                                 target="_blank"
                             >
                                 Download
+                            </a>{" "}
+                            -{" "}
+                            <a
+                                href="https://docs.docker.com/engine/install/"
+                                className="link font-medium"
+                                target="_blank"
+                            >
+                                Tutorial
                             </a>
                         </p>
                     </div>
@@ -56,7 +64,7 @@ function SoftwarePendukung(props: SoftwarePendukungProps): JSX.Element {
                 <li className="mt-1">
                     <div className="flex flex-col gap-1">
                         <h4 className="font-medium">Git</h4>
-                        <p className="leading-8">
+                        <p>
                             Digunakan sebagai version control.
                             <a
                                 href="https://www.docker.com/products/docker-desktop/"
